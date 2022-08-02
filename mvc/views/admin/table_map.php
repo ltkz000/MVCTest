@@ -4,7 +4,7 @@ $isOpen = 0;
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="./mvc/views/style/map.css" />
+    <!-- <link rel="stylesheet" href="./public/style/map.css" /> -->
 </head>
 
 <body>
@@ -13,6 +13,28 @@ $isOpen = 0;
             <div class="xline">
                 <span class="table-id" id="id"></span>
                 <button onclick="closePopup()">-</button>
+            </div>
+            <br><br>
+            <div class="table_btn">
+                <form action = "" method="POST">
+                    <input type="hidden" name="change-id" id="change-id" value="value">
+                    <div class ="empty_table">
+                        <input type="submit" class="empty_btn" id="empty_btn" name="empty_btn" value="Empty Table"/>
+                        <!-- <button class="empty_btn" type="button">Empty Table</button> -->
+                    </div>
+                    <div class ="booked_table">
+                        <input type="submit" class="booked_btn" id="booked_btn" name="booked_btn" value="Booked Table"/>
+                        <!-- <button class="booked_btn" type="button">Booked Table</button> -->
+                    </div>
+                    <div class ="on_table">
+                        <input type="submit" class="on_btn" id="on_btn" name="on_btn" value="On Table"/>
+                        <!-- <button class="on_btn" type="button">On Table</button> -->
+                    </div>
+                    <div class ="late_table">
+                        <input type="submit" class="late_btn" id="late_btn" name="late_btn" value="Late"/>
+                        <!-- <button class="late_btn" type="button">Late Table</button> -->
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -123,6 +145,7 @@ $isOpen = 0;
                         var popup = document.getElementById("myPopup");
                         popup.style.visibility = "visible";
                         document.getElementById("id").innerHTML = table_id;
+                        document.getElementById("change-id").value = table_id;
                     ';
                 }
                 ?>

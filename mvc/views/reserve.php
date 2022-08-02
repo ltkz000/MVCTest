@@ -18,10 +18,11 @@
                 <span  class="h1">+84 836 266 866</span><br></br>
                 <span  class="h3">Hoặc để lại thông tin, nhân viên nhà hàng sẽ liên hệ sau vài phút:</span><br></br>
                 <form action = "" method="POST">
+                    <input type="hidden" name="op" id="op" value="reserve">
                     <input type="text" name="get-name" id="get-name" placeholder="Họ và tên" />
                     <input type="text" name="get-phone-number" id="get-phone-number" placeholder="Số điện thoại" />
                     <input type="email" name="get-email" id="get-email" placeholder="Email"/>
-                    <input type="time" name = "get-time" id="get-time" min="11:00" max="20:00" placeholder="Time" />
+                    <input type="time" name = "get-time" id="get-time" min="11:00" max="21:00" placeholder="Time" />
                     <div  class="guest-number"><span>Số lượng khách: </span>
                         <input type="number" name="get-number" min="1" max="20" id="get-number"  defaultValue="1"/>
                     </div>

@@ -16,5 +16,22 @@
         {
             require_once "./mvc/views/admin/".$view.".php";
         }
+
+        function handleRequest()
+        {
+            $op = isset($_POST['op']) ? $_POST['op'] : NULL;  
+
+            switch($op)
+            {
+                case 'reserve':
+                    echo "Success";
+                    break;
+
+                case NULL:
+                    echo "NULL";
+                    break;
+                default:
+            }
+        }
     }
 ?>

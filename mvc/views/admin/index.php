@@ -2,10 +2,9 @@
 <html>
 
 <head>
-    <base href="public/style/"/>
-    <link rel="stylesheet" href="admin.css" />
-    <link rel="stylesheet" href="map.css" />
-    <link rel="stylesheet" href="table_process.css" />
+    <link rel="stylesheet" href="./public/style/admin.css" />
+    <link rel="stylesheet" href="./public/style/map.css" />
+    <link rel="stylesheet" href="./public/style/table_process.css" />
 </head>
 
 <body>

@@ -4,6 +4,63 @@
     --line-height: 3vw;
 }
 
+.empty_btn, .booked_btn, .on_btn, .late_btn{
+    border: none;
+    padding: 15px 32px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+    position: relative;
+    transition-duration: 0.4s;
+}
+
+.empty_btn{
+    background-color: darkgrey;
+    color: black; 
+}
+
+.empty_btn:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid darkgrey;
+}
+
+.booked_btn{
+    background-color: saddlebrown;
+    color: white;
+}
+
+.booked_btn:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid saddlebrown;
+}
+
+.on_btn{
+    background-color: lime;
+    color: black; 
+}
+
+.on_btn:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid lime;
+}
+
+.late_btn{
+    background-color: red;
+    color: white;
+}
+
+.late_btn:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid red;
+}
+
 .grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr 3fr 1fr 3fr 1fr 2fr 1fr 2fr 1fr 3fr 1fr 1fr;
@@ -112,7 +169,7 @@
     background-color: rgb(207, 207, 207);
     border-radius: 10px;
     box-shadow: 0px 5px 15px black;
-    border: 1px solid darkgray;
+    border: 1px solid darkgray;    
 }
 
 .xline {
