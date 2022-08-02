@@ -1,11 +1,11 @@
 <head>
-    <link rel="stylesheet" href="./mvc/views/style/contact.css" />
+    <!-- <link rel="stylesheet" href="./mvc/views/style/contact.css" /> -->
 </head>
 <div class="contact-boundary" id="contact-us">
     <div class="social-media-icon">
-        <a href="www.facebook.com"><img src='./mvc/views/asset/facebook.svg' height="50px"></img></a>
-        <a href="www.instagram.com"><img src='./mvc/views/asset/instagram.svg' height="50px"></img></a>
-        <a href="www.tripadvisor.com"><img src='./mvc/views/asset/tripadvisor.svg' height="50px"></img></a>
+        <a href="www.facebook.com"><img src='http://localhost:8080/web/public/asset/facebook.svg' height="50px"></img></a>
+        <a href="www.instagram.com"><img src='http://localhost:8080/web/public/asset/instagram.svg' height="50px"></img></a>
+        <a href="www.tripadvisor.com"><img src='http://localhost:8080/web/public/asset/tripadvisor.svg' height="50px"></img></a>
     </div>
     <div class="official-information">
         <i>

@@ -1,9 +1,30 @@
 <head>
-    <link rel="stylesheet" href="./mvc/views/style/table_process.css" />
+    <!-- <link rel="stylesheet" href="./mvc/views/style/table_process.css" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <div class="process-container">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/web/admin/Empty">Yêu cầu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/web/admin/Book">Hẹn lịch</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/web/admin/On">Trễ hẹn</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/web/admin/Late">Done</a>
+        </li>
+    </ul>
+    <div id="process-content">
+        <ul>
+        </ul>
+    </div>
+</div>
+
+<!-- <div class="process-container">
     <ul class="nav">
         <li class='nav-link req_a'>
             Yêu cầu
@@ -23,8 +44,8 @@
         <ul>
         </ul>
     </div>
-</div>
-<script type="text/javascript">
+</div> -->
+<!-- <script type="text/javascript">
 
     // request content
     function popRequest(props) {
@@ -170,4 +191,4 @@
             }
         });
     }
-</script>
+</script> -->

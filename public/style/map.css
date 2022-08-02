@@ -162,7 +162,7 @@
 }
 
 .popup {
-    width: 500px;
+    width: 240px;
     height: fit-content;
     position: fixed;
     min-height: 500px;

@@ -1,10 +1,5 @@
 <?php
     class adminModel extends DbConnect{
-        public function bookTable()
-        {
-
-        }
-
         public function changeColor()
         {
             $qr = "select Status,TableID from tables";
@@ -59,24 +54,22 @@
                 echo "nhu cl ". mysqli_error($this->conn);
         }
 
-        // public function changeColorEmpty($id)
-        // {
-        //     echo '<script type="text/JavaScript"> document.getElementById("'.$id.'").style.backgroundColor = "darkgrey"; </script>';
-        // }
+        public function getReserveInfo()
+        {
+            $ketqua = [];
 
-        // public function changeColorBooked($id)
-        // {
-        //     echo '<script type="text/JavaScript"> document.getElementById("'.$id.'").style.backgroundColor = "saddlebrown"; </script>';
-        // }
+            $qr = "select * from bookrequest";
+            $result = mysqli_query($this->conn, $qr);
 
-        // public function changeColorOnTable($id)
-        // {
-        //     echo '<script type="text/JavaScript"> document.getElementById("'.$id.'").style.backgroundColor = "lime"; </script>';
-        // }
+            if($result->num_rows > 0)
+            {
+                while($row = $result->fetch_assoc())
+                {
+                    $ketqua[] = $row;
+                }
+            }
 
-        // public function changeColorLate($id)
-        // {
-        //     echo '<script type="text/JavaScript"> document.getElementById("'.$id.'").style.backgroundColor = "red"; </script>';
-        // }
+            return $ketqua;
+        }
     }
 ?>

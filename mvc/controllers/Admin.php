@@ -3,7 +3,7 @@
     {
         function HomePage()
         {
-            $this->viewAdmin("index");
+            $this->viewAdmin("index", ["page" => "empty"]);
             $khach = $this->model("adminModel");
 
             if(isset($_POST["empty_btn"]))
@@ -33,15 +33,30 @@
                 $khach->changeTableStatus($changeId, "late");
                 $khach->changeColor();
             }
-            
-            
         }
 
-        function Test()
+        function Empty()
         {
-            $this->viewAdmin("index");
-            $khach = $this->model("adminModel");
-            $khach->changeColorBooked();
+            $this->viewAdmin("index", [
+                "page" => "empty",
+                "info" => $this->model("adminModel")->getReserveInfo()]);
+            // $khach = $this->model("adminModel");
+            // $khach->changeColorBooked();
+        }
+
+        function Book()
+        {
+            $this->viewAdmin("index", ["page" => "book"]);
+        }
+
+        function On()
+        {
+            $this->viewAdmin("index", ["page" => "on"]);
+        }
+
+        function Late()
+        {
+            $this->viewAdmin("index", ["page" => "late"]);
         }
     }
 ?>

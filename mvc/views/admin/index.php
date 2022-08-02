@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./public/style/admin.css" />
-    <link rel="stylesheet" href="./public/style/map.css" />
-    <link rel="stylesheet" href="./public/style/table_process.css" />
+    <link rel="stylesheet" href="http://localhost:8080/web/public/style/admin.css" />
+    <link rel="stylesheet" href="http://localhost:8080/web/public/style/map.css" />
+    <link rel="stylesheet" href="http://localhost:8080/web/public/style/table_process.css" />
 </head>
 
 <body>
@@ -41,6 +41,10 @@
             </div>
             <div class="process-state">
                 <?php include "./mvc/views/admin/table_process.php"; ?>
+                <?php
+                    if($data["page"])
+                    include "./mvc/views/admin/".$data["page"].".php";
+                ?>
             </div>
         </div>
     </div>

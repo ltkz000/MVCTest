@@ -1,7 +1,7 @@
 .process-container {
     background-color: rgb(36, 36, 36);
     max-width: 32vw;
-    min-height: 100%;
+    min-height: 0%;
 }
 
 ul {
